@@ -428,6 +428,12 @@ textarea {
   border: none;
 }
 li {
+  list-style: none;
+}
+.li_for_about {
+  list-style: inherit;
+}
+.ul__for__about {
   font-size: large;
   font-weight: 600;
   line-height: 50px;
