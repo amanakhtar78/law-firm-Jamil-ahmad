@@ -191,6 +191,7 @@ nav {
   width: 100%;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
+  z-index: 10;
 }
 .fixed-nav .links a {
   color: var(--clr-grey-1);
@@ -313,7 +314,7 @@ header {
 #about,
 #services,
 #tours {
-  height: 100vh;
+ min-height: 100vh;
 }
 #services {
   background: var(--clr-white);
@@ -441,8 +442,48 @@ li {
 
 .section__for__about {
   background: var(--clr-grey-9);
-  padding: 15px;
+  padding: 10px;
 }
 .for_about_sec__bring__down {
   margin: 40px;
+}
+.our__services__section{
+  padding: 25px;
+}
+.services__para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: overline;
+  font-weight: 600;
+  color: black;
+}
+.for__services__main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  /* align-items: center; */
+}
+.aside__for__services__offered{
+  display: flex;
+ 
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  /* background-color: #eaeff3; */
+  margin-bottom: 20px;
+  padding: 10px 0px 0px 10px;
+  border-radius: 5px;
+  transition: transform .2s;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  z-index: 1;
+  
+}
+
+.aside__for__services__offered:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 21px rgba(33,33,33,.2); 
+  z-index: 0;
 }
